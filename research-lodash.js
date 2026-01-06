@@ -24,11 +24,11 @@ console.log('...\n');
 console.log('=== Size comparison ===');
 console.log(
   'Full lodash:',
-  Math.round(fs.statSync(lodashPath).size / 1024) + 'KB'
+  Math.round(fs.statSync(lodashPath).size / 1024) + 'KB',
 );
 console.log(
   'Just get function:',
-  Math.round(fs.statSync(getPath).size / 1024) + 'KB'
+  Math.round(fs.statSync(getPath).size / 1024) + 'KB',
 );
 
 // 5. Какие файлы реально импортируются

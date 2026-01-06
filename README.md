@@ -1,5 +1,16 @@
-# hexlet-jsМой первый проект на Хекслете
+# Hexlet JS Project
 
-## Команды проекта
+Проект для изучения JavaScript и инструментов разработки.
 
-- `make install` — устанавливает зависимости проекта с помощью `npm ci`.
+## Установка
+
+```bash
+npm install
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"]
+}
+
+```

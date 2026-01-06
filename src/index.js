@@ -1,9 +1,9 @@
 // Импортируем нужные функции из lodash оптимальным способом
-const get = require('lodash/get');
-const set = require('lodash/set');
+import get from 'lodash/get.js';
+import set from 'lodash/set.js';
 
 // Основная логика приложения
-function main() {
+export function main () {
   const user = {
     name: 'John',
     age: 30,
@@ -18,9 +18,10 @@ function main() {
   set(user, 'location.city', 'New York');
   console.log('Updated user:', user);
 
-  function greet(u) {
+  function greet (u) {
     console.log(
-      'Hello, ' + u.name + '! You have ' + u.skills.length + ' skills'
+      'Hello, ' + u.name +
+      '! You have ' + u.skills.length + ' skills',
     );
   }
 
@@ -28,6 +29,3 @@ function main() {
 
   return user;
 }
-
-// Экспортируем функцию для использования в других модулях
-module.exports = { main };

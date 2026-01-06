@@ -1,5 +1,5 @@
 // Импортируем функцию из нашего модуля
-const { main } = require('./src/index.js');
+import { main } from './src/index.js';
 
 // Вызываем основную логику приложения
 console.log('=== Starting application ===');
