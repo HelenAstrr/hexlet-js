@@ -20,8 +20,7 @@ export function main () {
 
   function greet (u) {
     console.log(
-      'Hello, ' + u.name +
-      '! You have ' + u.skills.length + ' skills',
+      'Hello, ' + u.name + '! You have ' + u.skills.length + ' skills'
     );
   }
 
