@@ -23,12 +23,16 @@ export default [
       // Рекомендуемые правила ESLint
       ...js.configs.recommended.rules,
 
-      // Правила стиля от @stylistic - СОГЛАСОВАННЫЕ С PRETTIER
+      // Базовые правила стиля
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/quotes': ['error', 'single'],
       '@stylistic/indent': ['error', 2],
-      '@stylistic/comma-dangle': 'off', // ВЫКЛЮЧАЕМ - пусть Prettier управляет этим
-      '@stylistic/space-before-function-paren': ['error', 'always'],
+
+      // ВЫКЛЮЧАЕМ правила, конфликтующие с Prettier
+      '@stylistic/comma-dangle': 'off',
+      '@stylistic/space-before-function-paren': 'off', // ОТКЛЮЧАЕМ
+
+      // Оставляем некритичные правила
       '@stylistic/space-before-blocks': 'error',
       '@stylistic/keyword-spacing': 'error',
       '@stylistic/no-trailing-spaces': 'error',
